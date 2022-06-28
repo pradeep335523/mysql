@@ -1,0 +1,2 @@
+docker network create emp-net
+docker run -d --name=empservice --network emp-net -p 3306:3306  -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=employee mysql
